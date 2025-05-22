@@ -1,0 +1,43 @@
+﻿<div class="container mt-5">
+    <h4>User Registration Form</h4>
+    <form id="userForm">
+        <div class="row mb-3">
+            <div class="col-md-4">
+                <label for="FirstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="FirstName" placeholder="Enter first name">
+                <span id="FirstName_Error" class="text-danger error"></span>
+            </div>
+            <div class="col-md-4">
+                <label for="MiddleName" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="MiddleName" placeholder="Enter middle name">
+            </div>
+            <div class="col-md-4">
+                <label for="LastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="LastName" placeholder="Enter last name">
+                <span id="LastName_Error" class="text-danger error"></span>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label for="EmailId" class="form-label">Email ID</label>
+                <input type="email" class="form-control" id="EmailId" placeholder="Enter email">
+                <span id="EmailId_Error" class="text-danger error"></span>
+            </div>
+            <div class="col-md-6">
+                <label for="UserName" class="form-label">Username</label>
+                <input type="text" class="form-control" id="UserName" placeholder="Enter username">
+                <span id="UserName_Error" class="text-danger error"></span>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="BirthDate" class="form-label">Birth Date</label>
+            <input type="date" class="form-control" id="BirthDate">
+            <span id="BirthDate_Error" class="text-danger error"></span>
+        </div>
+
+            <button type="button" class="btn btn-primary" onclick="insertUser()">Submit</button>
+
+    </form>
+</div>
